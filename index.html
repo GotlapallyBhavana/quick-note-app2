@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div>
+        <p class="eyebrow">PERSONAL WORKSPACE</p>
+        <h1>Quick Notes</h1>
+        <p class="subtitle">Capture ideas, keep them organised.</p>
+      </div>
+      <span class="count" id="note-count">0 notes</span>
+    </header>
+
+    <section class="editor" aria-label="Create a note">
+      <input id="note-title" type="text" placeholder="Note title" maxlength="70">
+      <textarea id="note-body" rows="4" placeholder="Write something worth remembering..."></textarea>
+      <div class="editor-footer">
+        <span id="status" role="status">Your notes are saved in this browser.</span>
+        <button id="save-button">Add note</button>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <h2>Your notes</h2>
+      <input id="search" type="search" placeholder="Search notes..." aria-label="Search notes">
+    </section>
+    <section id="notes-list" class="notes-grid" aria-live="polite"></section>
+    <p id="empty-state" class="empty">No notes yet. Add your first note above.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
